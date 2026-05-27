@@ -1,0 +1,21 @@
+# HackerRank - sWAP cASE
+
+def swap_case(s):
+
+    str1 = ""
+
+    for i in s:
+
+        if i.isupper():
+            str1 += chr(ord(i) ^ 32)
+
+        elif i.islower():
+            str1 += chr(ord(i) ^ 32)
+
+        elif i.isdigit():
+            str1 += i
+
+        else:
+            str1 += i
+
+    return str1
