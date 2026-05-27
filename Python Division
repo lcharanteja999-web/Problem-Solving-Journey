@@ -1,8 +1,0 @@
-
-# HackerRank - Python Division
-
-res1 = a // b
-res2 = a / b
-
-print(round(res1, 11))
-print(round(res2, 11))
