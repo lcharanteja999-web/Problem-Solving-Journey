@@ -1,0 +1,23 @@
+# ---------------- HackerRank Exceptions Problem ----------------
+# Question:
+# Perform integer division of a and b.
+# Handle:
+# 1. ZeroDivisionError
+# 2. ValueError
+# Print the error message if exception occurs.
+
+t = int(input())
+
+for i in range(t):
+
+    try:
+        a, b = input().split()
+
+        print(int(a) // int(b))
+
+    except (ZeroDivisionError, ValueError) as x:
+
+        if b == '0':
+            print("Error Code: integer division or modulo by zero")
+        else:
+            print("Error Code:", x)
