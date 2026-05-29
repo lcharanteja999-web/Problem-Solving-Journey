@@ -1,0 +1,18 @@
+# ---------------- Split and Join ----------------
+# Question:
+# Given a string, split it into words and
+# join the words using hyphens (-).
+#
+# Input:
+# this is a string
+#
+# Output:
+# this-is-a-string
+
+def split_and_join(line):
+
+    result = line.split()
+
+    string = "-".join(result)
+
+    return string
