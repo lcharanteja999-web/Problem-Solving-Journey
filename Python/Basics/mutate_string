@@ -1,0 +1,23 @@
+# ---------------- Mutate String ----------------
+# Question:
+# Given a string, a position, and a character,
+# replace the character at the given position.
+#
+# Example:
+# Input:
+# abracadabra
+# 5
+# k
+#
+# Output:
+# abrackdabra
+
+def mutate_string(string, position, character):
+
+    l = list(string)
+
+    l[position] = character
+
+    string = "".join(l)
+
+    return string
