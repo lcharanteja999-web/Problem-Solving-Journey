@@ -1,0 +1,60 @@
+class node:
+    def __init__(self,data= None,next = None):
+        self.data = data
+        self.next = next
+
+class linkedlist:
+
+    def __init__(self,head = None):
+        self.head = head
+
+    def create_node(self):      #creating node
+        temp = self.head
+
+        while True:
+            choice = int(input("enter 1 to create node and 0 to stop\n"))
+
+            if choice == 0:
+                break
+
+            data = int(input("enter data\n"))
+            newnode = node(data)
+
+            if self.head is None:
+                self.head = newnode
+                temp = self.head
+            else:
+                temp.next = newnode
+                temp = temp.next
+        
+
+    def reverse(self):       #reverse function
+            
+        if self.head is None:
+            print("list is empty\n")
+            return
+            
+        prev = None
+        current = self.head
+
+        while current is not None:   
+            next_node = current.next
+            current.next = prev
+            prev = current
+            current = next_node
+            
+        self.head = prev
+
+    def display(self):
+        temp = self.head
+
+        while temp is not None:
+            print(f"{temp.data} -> ",end = " ")
+            temp = temp.next
+            
+        print("Null")
+
+l1 = linkedlist()
+l1.create_node()
+l1.reverse()
+l1.display()
