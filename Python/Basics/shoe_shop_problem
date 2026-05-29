@@ -1,0 +1,40 @@
+# ---------------- Shoe Shop Problem ----------------
+# Question:
+# A shoe shop has X shoes in stock.
+# Customers come and request a shoe size and offer a price.
+# If the requested shoe size is available, sell it and add
+# the offered price to total earnings.
+#
+# Input:
+# Number of shoes
+# Available shoe sizes
+# Number of customers
+# Customer requests (size, price)
+#
+# Output:
+# Total earnings from all successful sales.
+
+x = int(input())
+l = list(map(int, input().split()))
+
+n = int(input())
+
+dic = {}
+
+for i in l:
+    if i not in dic:
+        dic[i] = 1
+    else:
+        dic[i] += 1
+
+total = 0
+
+for _ in range(n):
+
+    size, amount = map(int, input().split())
+
+    if size in dic and dic[size] > 0:
+        dic[size] -= 1
+        total += amount
+
+print(total)
