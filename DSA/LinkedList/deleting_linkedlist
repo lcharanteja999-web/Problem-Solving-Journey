@@ -1,0 +1,120 @@
+class node:
+    def __init__(self,data= None, next = None):
+        self.data = data
+        self.next = next
+
+class linkedlist:
+    def __init__(self,head = None):
+        self.head = head
+    
+    def create_node(self):
+
+        temp = self.head
+
+        while True:
+            choice = int(input("enter 1 to create node or 0 to stop:\n"))
+
+            if choice == 0:
+                break
+                
+            data = int(input("enter data "))
+            newnode = node(data)
+
+            #first node
+
+            if self.head is None:
+                self.head = newnode
+                temp = newnode
+            else:
+                temp.next = newnode
+                temp = temp.next
+    
+    #-------------------deleting at first------------------#
+
+    def delete_at_first(self):
+
+        if self.head is None:
+            print("list is empty")
+            return
+        
+        temp = self.head
+        self.head = self.head.next
+        del temp
+
+    #-------------------deleting at last------------------#
+
+    def delete_at_last(self):
+
+        if self.head is None:    #if list is empty
+            print("list is empty")
+            return
+        
+        if self.head.next is None:  #if list has only one node
+            self.head = None
+            return 
+        
+        temp = self.head
+
+        while temp.next is not None:
+            prev = temp
+            temp = temp.next
+        
+        prev.next = None
+        del temp
+
+    #-------------------deleting at position------------------#
+
+    def delete_at_position(self):
+
+        if self.head is None:   #edge case for empty list
+            print("list is empty")
+            return
+        
+        
+        
+        pos = int(input("enter position:\n"))
+
+        if pos < 0:         #for invlaid position
+            print("invalid position\n")
+            return
+        
+        temp = self.head
+
+        if pos == 0:  #edge case for position 0
+            self.head = self.head.next
+            return
+        
+        for _ in range(pos-1):  #when a loop variable is unused ,u can write like _ this
+
+            temp = temp.next
+
+        temp.next = temp.next.next
+
+    #---------------------------------display-------------------------------
+
+    def display(self):
+
+        temp = self.head
+
+        while temp is not None:
+            print(f"{temp.data} -> ",end = " ")
+            temp = temp.next
+        
+        print("Null")
+
+
+l1 = linkedlist()  #creating object
+l1.create_node()
+l1.display()
+
+l1.delete_at_first()
+l1.display()
+
+l1.delete_at_last()
+l1.display()
+
+l1.delete_at_position()   
+l1.display() 
+
+
+        
