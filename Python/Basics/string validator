@@ -1,0 +1,32 @@
+# ---------------- String Validators ----------------
+# Question:
+# Given a string s, determine if it contains:
+#  Any alphanumeric characters
+#  Any alphabetical characters
+#  Any digits
+#  Any lowercase characters
+#  Any uppercase characters
+#
+# Print True or False for each condition.
+
+a = b = c = d = e = False
+
+i = 0
+while i < len(s):
+    if s[i].isalnum():
+        a = True
+    if s[i].isalpha():
+        b = True
+    if s[i].isdigit():
+        c = True
+    if s[i].islower():
+        d = True
+    if s[i].isupper():
+        e = True
+    i += 1
+
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
