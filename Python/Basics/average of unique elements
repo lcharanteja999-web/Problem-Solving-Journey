@@ -1,0 +1,16 @@
+# ---------------- Average of Unique Elements ----------------
+# Question:
+# Given a list of integers, remove duplicates and
+# calculate the average of the unique values.
+
+def average(array):
+
+    s = set(array)
+    total = 0
+
+    for i in s:
+        total += i
+
+    avg = total / len(s)
+
+    return avg
