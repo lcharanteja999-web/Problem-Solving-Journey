@@ -4,7 +4,7 @@ This repository contains my Data Structures and Algorithms practice programs.
 
 ## Languages
 C  
-Python (upcoming)
+Python 
 
 ## Topics Covered
 Linked Lists  
