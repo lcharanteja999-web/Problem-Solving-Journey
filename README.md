@@ -19,6 +19,9 @@ Improve problem-solving skills
 Strengthen DSA concepts  
 Transition from C to Python for DSA and competitive programming
 
-## Current Progress
-Solved Linked List problems in C  
-Started learning Python for DSA
+### Current Progress
+
+Started learning Python for Data Structures and Algorithms (DSA)
+Solving HackerRank Python problems
+Practicing problem solving and coding fundamentals
+Building a strong foundation in Python programming
