@@ -5,6 +5,7 @@ This repository contains my Data Structures and Algorithms practice programs.
 ## Languages
 C  
 Python 
+c++(in progress)
 
 ## Topics Covered
 Linked Lists  
@@ -15,7 +16,7 @@ HackerRank
 Personal Practice
 
 ## Goals
-Improve problem-solving skills  
+Improve problem solving skills  
 Strengthen DSA concepts  
 Transition from C to Python for DSA and competitive programming
 
