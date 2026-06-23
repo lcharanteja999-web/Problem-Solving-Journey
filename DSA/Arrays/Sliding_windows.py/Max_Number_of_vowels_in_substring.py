@@ -30,27 +30,15 @@ print(max_count)
 s = input("Enter string: ")
 k = int(input("Enter k: "))
 
-count = 0
+window_count = sum(1 for ch in s[:k] if ch in "aeiou")
+max_count = window_count
 
-# First window
-for i in range(k):
-    if s[i] in "aeiou":
-        count += 1
-
-max_count = count
-
-# Slide the window
-for i in range(k, len(s)):
-
-    # Remove leaving character
+for i in range(k,len(s)):
     if s[i-k] in "aeiou":
-        count -= 1
-
-    # Add entering character
+        window_count -= 1
+    
     if s[i] in "aeiou":
-        count += 1
+        window_count += 1
 
-    if count > max_count:
-        max_count = count
-
+    max_count = max(max_count,window_count)
 print(max_count)
