@@ -1,28 +1,35 @@
 # DSA Practice 🚀
 
-This repository contains my Data Structures and Algorithms practice programs.
+This repository contains my Data Structures and Algorithms (DSA) practice and programming exercises as I continue improving my problem solving skills.
 
 ## Languages
-C  
-Python 
-c++(in progress)
 
-## Topics Covered
-Linked Lists  
-Basic Problem Solving
+* Python
 
 ## Platforms
-HackerRank  
-Personal Practice
+
+* HackerRank
+* LeetCode
+* Personal Practice
+
+## Current Focus
+
+* Learning Data Structures and Algorithms using **Python**.
+* Solving **C++** practice problems on HackerRank to strengthen my understanding of the language.
+* Learning **Object Oriented Programming (OOP)** in Python.
+* Building consistency through regular coding practice.
 
 ## Goals
-Improve problem solving skills  
-Strengthen DSA concepts  
-Transition from C to Python for DSA and competitive programming
 
-### Current Progress
+* Build a strong foundation in DSA.
+* Improve problem solving skills through consistent practice.
+* Become proficient in Python and OOP.
+* Transition to learning DSA and competitive programming in C++ in the future.
+* Stay consistent by solving problems on HackerRank and LeetCode.
 
-Started learning Python for Data Structures and Algorithms (DSA)
-Solving HackerRank Python problems
-Practicing problem solving and coding fundamentals
-Building a strong foundation in Python programming
+## Progress
+
+* ✅ Started my LeetCode journey.
+* ✅ Solving C++ problems on HackerRank.
+* ✅ Learning Python OOP.
+* 🚀 Continuing to strengthen my DSA and programming fundamentals.
