@@ -1,0 +1,61 @@
+#include <iostream>
+using namespace std;
+
+int findHighest(int a[3][3])
+{
+    int highest = a[0][0];
+
+    for(int i = 0; i < 3; i++)
+    {
+        for(int j = 0; j < 3; j++)
+        {
+            if(a[i][j] > highest)
+            {
+                highest = a[i][j];
+            }
+        }
+    }
+
+    return highest;
+}
+
+int findLowest(int a[3][3])
+{
+    int lowest = a[0][0];
+
+    for(int i = 0; i < 3; i++)
+    {
+        for(int j = 0; j < 3; j++)
+        {
+            if(a[i][j] < lowest)
+            {
+                lowest = a[i][j];
+            }
+        }
+    }
+
+    return lowest;
+}
+
+int main()
+{
+    int a[3][3];
+
+    cout << "Enter elements of matrix:\n";
+
+    for(int i = 0; i < 3; i++)
+    {
+        for(int j = 0; j < 3; j++)
+        {
+            cin >> a[i][j];
+        }
+    }
+
+    int highest = findHighest(a);
+    int lowest = findLowest(a);
+
+    cout << "Highest element = " << highest << endl;
+    cout << "Lowest element = " << lowest << endl;
+
+    return 0;
+}
